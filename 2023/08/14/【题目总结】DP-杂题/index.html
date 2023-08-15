@@ -24,7 +24,7 @@
 <meta property="og:description" content="[清华集训2017] 榕树之心  一棵榕树可以抽象成一棵nnn个结点的有根树，其中结点编号为1∼n1 \sim n1∼n，而111号点就是根节点。初始时，树只有一号点，而心也在一号点。之后每一步，树都会长出一个新结点，即某个和当前已经存在的某个结点相邻的结点被加入了树中，之后，心会沿着心到新加结点的简单路径移动一步。这棵nnn个结点的树有很多种生长的顺序，不同的顺序可能会导致最终心的位置不同。现">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-08-14T14:31:29.000Z">
-<meta property="article:modified_time" content="2023-08-15T01:44:52.452Z">
+<meta property="article:modified_time" content="2023-08-15T12:29:21.850Z">
 <meta property="article:author" content="gk4000plus">
 <meta property="article:tag" content="DP">
 <meta name="twitter:card" content="summary_large_image">
@@ -323,6 +323,7 @@
 </ol>
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">d</mi><mi mathvariant="normal">f</mi><mi mathvariant="normal">s</mi></mrow><annotation encoding="application/x-tex">\rm dfs</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord"><span class="mord mathrm">d</span><span class="mord mathrm" style="margin-right:0.07778em;">f</span><span class="mord mathrm">s</span></span></span></span></span> 一遍子树即可判断根结点是否合法。</p>
 <p>考虑解决任意结点的答案，发现将根到该结点的路径缩成新根节点后根节点的答案即为答案，而第一步过程中只用到每个结点的重子树信息，而可能从根到所求结点路径上存在重边，故我们需维护出每个重子树和次重子树即可。</p>
+<hr />
 
                 
               </div>
